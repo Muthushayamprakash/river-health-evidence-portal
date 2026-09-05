@@ -1,0 +1,52 @@
+[
+  {
+    "id": "LOC-101",
+    "name": "Mula River - Sector A (Upstream Confluence)",
+    "latitude": 18.5204,
+    "longitude": 73.8567,
+    "scenario": "HEALTHY",
+    "description": "Upstream confluence monitoring station equipped with real-time multi-parameter sensors and frequent satellite passes.",
+    "informal_recycling_proximity": "Low (2.5 km distance)",
+    "waste_type": "Mixed Municipal / Organic"
+  },
+  {
+    "id": "LOC-102",
+    "name": "Mutha River - Sector B (Informal Scrap Sorting Zone)",
+    "latitude": 18.5074,
+    "longitude": 73.8077,
+    "scenario": "CONFLICTING EVIDENCE",
+    "description": "High-density informal waste scrap sorting area with conflicting optical satellite and submerged sensor readings.",
+    "informal_recycling_proximity": "Direct (0.1 km distance)",
+    "waste_type": "Plastics, E-waste, Scrap Metals"
+  },
+  {
+    "id": "LOC-103",
+    "name": "Pavana Stream - Sector C (Recycling Market Bridge)",
+    "latitude": 18.6298,
+    "longitude": 73.7997,
+    "scenario": "STALE + POLLUTED",
+    "description": "Downstream of informal recycling market; sensor telemetry interrupted and telemetry data is out of date (>72h).",
+    "informal_recycling_proximity": "High (0.3 km distance)",
+    "waste_type": "Mixed Municipal, Chemical Drums"
+  },
+  {
+    "id": "LOC-104",
+    "name": "Ram Nadi - Sector D (Waste Dumping Bend)",
+    "latitude": 18.5529,
+    "longitude": 73.7844,
+    "scenario": "MISSING SENSOR FIELD",
+    "description": "Active monitoring station with a malfunctioning temperature sensor probe while other parameters remain online.",
+    "informal_recycling_proximity": "Moderate (0.8 km distance)",
+    "waste_type": "Solid Municipal Waste, Construction Rubble"
+  },
+  {
+    "id": "LOC-105",
+    "name": "Indrayani Outflow - Sector E (Periphery Canal)",
+    "latitude": 18.6752,
+    "longitude": 73.8921,
+    "scenario": "MULTIPLE MISSING SOURCES",
+    "description": "Remote canal outflow section lacking satellite coverage, citizen reports, and formal lab validation records.",
+    "informal_recycling_proximity": "Moderate (1.2 km distance)",
+    "waste_type": "Mixed Plastics & Unsorted Waste"
+  }
+]

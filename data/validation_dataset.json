@@ -1,0 +1,57 @@
+[
+  {
+    "location_id": "LOC-101",
+    "scenario": "Healthy",
+    "expected_status": "HEALTHY",
+    "available_sources": ["OPEN SENSOR", "SATELLITE", "CITIZEN OBSERVATION", "VALIDATION RECORD"],
+    "missing_sources": [],
+    "stale_sources": [],
+    "has_conflict": false,
+    "expected_confidence_range": [85, 100],
+    "expected_uncertainty_range": [0, 15]
+  },
+  {
+    "location_id": "LOC-102",
+    "scenario": "Conflicting Evidence",
+    "expected_status": "CONFLICTING EVIDENCE",
+    "available_sources": ["OPEN SENSOR", "SATELLITE", "CITIZEN OBSERVATION", "VALIDATION RECORD"],
+    "missing_sources": [],
+    "stale_sources": [],
+    "has_conflict": true,
+    "expected_confidence_range": [40, 75],
+    "expected_uncertainty_range": [25, 60]
+  },
+  {
+    "location_id": "LOC-103",
+    "scenario": "Stale + Polluted",
+    "expected_status": "POLLUTION RISK",
+    "available_sources": ["OPEN SENSOR", "SATELLITE", "CITIZEN OBSERVATION"],
+    "missing_sources": ["VALIDATION RECORD"],
+    "stale_sources": ["OPEN SENSOR", "SATELLITE", "CITIZEN OBSERVATION"],
+    "has_conflict": false,
+    "expected_confidence_range": [40, 70],
+    "expected_uncertainty_range": [30, 60]
+  },
+  {
+    "location_id": "LOC-104",
+    "scenario": "Missing Sensor Field",
+    "expected_status": "CAUTION",
+    "available_sources": ["OPEN SENSOR", "SATELLITE", "CITIZEN OBSERVATION"],
+    "missing_sources": ["OPEN SENSOR (Water Temperature)"],
+    "stale_sources": [],
+    "has_conflict": false,
+    "expected_confidence_range": [70, 88],
+    "expected_uncertainty_range": [12, 30]
+  },
+  {
+    "location_id": "LOC-105",
+    "scenario": "Multiple Missing Sources",
+    "expected_status": "INSUFFICIENT EVIDENCE",
+    "available_sources": ["OPEN SENSOR"],
+    "missing_sources": ["SATELLITE", "CITIZEN OBSERVATION", "VALIDATION RECORD"],
+    "stale_sources": [],
+    "has_conflict": false,
+    "expected_confidence_range": [15, 45],
+    "expected_uncertainty_range": [55, 85]
+  }
+]
